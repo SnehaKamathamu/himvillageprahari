@@ -1,0 +1,68 @@
+.form{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #e6f7ec;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.form-container {
+  margin:50px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 80%; /* Set width to 80% of the page */
+  max-width: 900px; /* Set a max-width for larger screens */
+  box-sizing: border-box;
+}
+
+.form h2 {
+  text-align: center;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+.form label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.form input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="file"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /*Ensures padding doesn't affect width */
+}
+
+.form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1a7d3a;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #145a2f;
+}

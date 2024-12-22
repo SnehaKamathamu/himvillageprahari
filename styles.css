@@ -11,6 +11,8 @@ body {
     font-family: 'Oxygen', sans-serif;
     width: 100%;
 }
+
+
 html {
     overflow-x:hidden; /* Prevent horizontal scrolling */
 }
@@ -174,6 +176,9 @@ nav {
     cursor: pointer;
 }
 
+.main-body-btn:hover{
+    background-color: #363636;
+}
 .section2{
     width:100vw;
     height:auto;
@@ -1072,6 +1077,10 @@ height: 220px;
 object-fit: contain;
 }
 footer .copyright{
+.footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
 }
 footer .underline{

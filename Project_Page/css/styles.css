@@ -1,0 +1,367 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: #3b7d4c;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Banner Section */
+.banner {
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.banner-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    padding: 1.5rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    flex-direction: column;
+}
+
+.banner-title {
+    position: relative;
+    font-size: 2.8em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(20, 73, 38, 0.5);
+    animation: slideInTitle 3s ease-in-out;
+    margin: 0;
+    color: #295a3c;
+}
+
+.logo img {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.logo p {
+    font-size: 1em;
+    font-weight: 800;
+    color: #f7f7f7;
+    position: absolute;
+    top: 9rem;
+    left: 2rem;
+}
+
+.clock {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background: none;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.download-buttons {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+/* Common style for all download buttons */
+.download-buttons button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey; /* Circle background */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+/* Debugging Style: Add red border around image */
+.download-buttons img {
+    width: 24px; /* Adjust size of the logo */
+    height: 24px;
+    object-fit: contain;
+    border: 2px; /* Debugging border */
+}
+
+/* Hover effect for buttons */
+.download-buttons button:hover {
+    background-color: #295a3c;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Section Styling */
+section {
+    padding: 4rem 2rem;
+    margin: 0;
+}
+
+h2 {
+    text-align: left;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+li {
+    margin: 0.8rem 0;
+    font-size: 1.1rem;
+}
+
+/* Modern Button Styles */
+.year-button {
+    background: #3b7d4c;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.year-button:hover {
+    background: #295a3c;
+    border-color: white;
+}
+
+.year-button:focus {
+    outline: none;
+}
+/* Modern Button Styles */
+.latest-button {
+    background: #3b7d4c;
+    color: white;
+    padding: 15px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.latest-button:hover {
+    background: #295a3c;
+    border-color: white;
+}
+
+.latest-button:focus {
+    outline: none;
+}
+
+/* Project List Styling */
+.project-list {
+    display: none;
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.project-list li {
+    padding: 10px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-list li:hover {
+    background-color: grey;
+}
+
+/* Slideshow Section */
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: auto; /* Set height for the slideshow */
+}
+
+.slideshow-track {
+    display: flex;
+    gap: 10px;
+    width: calc(100%);
+    animation: scrollSlideshow 15s linear infinite;
+    animation-play-state: paused; /* Start with paused animation */
+}
+
+.slide-image {
+    width: 300px; /* Adjust the width of each image */
+    height: 300px; /* Match height */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Keyframe Animation */
+@keyframes scrollSlideshow {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/* Testimonial Section */
+.testimonials {
+    background: #e5f4f1;
+    padding: 3rem 1.5rem;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials blockquote {
+    font-style: italic;
+    font-size: 1.4em;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.testimonials p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+/* Full Tour Video */
+#full-tour-video {
+    background: white;
+    padding: 1rem 7rem;
+    color: grey;
+    text-align: center;
+}
+
+#project-video {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer Section */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #3b7d4c;
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .banner {
+        height: 250px;
+    }
+    
+    .banner-title {
+        font-size: 2em;
+    }
+
+    .logo img {
+        width: 90px;
+    }
+
+    .download-btn {
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+
+    .slideshow img {
+        max-width: 100%;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: 200px;
+    }
+    
+    .banner-title {
+        font-size: 1.8em;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .clock {
+        font-size: 0.9rem;
+    }
+
+    .download-btn {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    .year-button {
+        padding: 10px 18px;
+        font-size: 1.1rem;
+    }
+    .latest-button {
+        padding: 10px 18px;
+        font-size: 1.1rem;
+    }
+}

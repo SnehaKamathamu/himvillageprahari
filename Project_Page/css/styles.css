@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #f7f7f7;
-    color: #333;
+    background: #d3d3d3;
+    color: grey;
     line-height: 1.6;
 }
 
@@ -100,7 +100,7 @@ h1, h2, h3 {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: grey; /* Circle background */
+    background-color: #d3d3d3; /* Circle background */
     border: none;
     cursor: pointer;
     display: flex;
@@ -122,7 +122,6 @@ h1, h2, h3 {
     background-color: #295a3c;
 }
 
-
 @keyframes fadeIn {
     from {
         opacity : 0;
@@ -134,8 +133,9 @@ h1, h2, h3 {
 
 /* Section Styling */
 section {
-    padding: 4rem 2rem;
-    margin: 0;
+    padding: 1rem 1rem; /* Uniform padding inside each section */
+    margin: 0;  /* Consistent spacing between sections */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -147,7 +147,7 @@ h2 {
 p {
     font-size: 1.1em;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: left;
 }
 
 ul {
@@ -175,34 +175,12 @@ li {
 
 .year-button:hover {
     background: #295a3c;
-    border-color: white;
+    border-color: #d3d3d3;
 }
 
 .year-button:focus {
     outline: none;
 }
-/* Modern Button Styles */
-.latest-button {
-    background: #3b7d4c;
-    color: white;
-    padding: 15px 25px;
-    margin: 10px;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.3em;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.latest-button:hover {
-    background: #295a3c;
-    border-color: white;
-}
-
-.latest-button:focus {
-    outline: none;
-}
-
 /* Project List Styling */
 .project-list {
     display: none;
@@ -212,7 +190,7 @@ li {
 
 .project-list li {
     padding: 10px;
-    background: #f7f7f7;
+    background: #d3d3d3;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -228,6 +206,7 @@ li {
     overflow: hidden;
     width: 100%;
     height: auto; /* Set height for the slideshow */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .slideshow-track {
@@ -257,9 +236,8 @@ li {
 
 /* Testimonial Section */
 .testimonials {
-    background: #e5f4f1;
+    background: #d3d3d3;
     padding: 3rem 1.5rem;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials blockquote {
@@ -277,10 +255,13 @@ li {
 
 /* Full Tour Video */
 #full-tour-video {
-    background: white;
-    padding: 1rem 7rem;
+    background: #d3d3d3;
     color: grey;
-    text-align: center;
+    text-align: left; /* Aligns text to the left */
+    display: flex; /* Use flexbox to layout text and video */
+    flex-direction: column; /* Stack the content vertically */
+    gap: 0.5cm; /* 0.5cm space between text and video */
+    padding: 1rem; /* Uniform padding for the section */
 }
 
 #project-video {
@@ -288,21 +269,23 @@ li {
     max-width: 1080px;
     margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
-
 
 /* Footer Section */
 footer {
-    text-align: center;
-    padding: 1.5rem;
-    background: #3b7d4c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem auto;
+    background-color: #3b7d4c;
     color: white;
 }
 
 footer p {
-    margin: 0;
+    margin: 0.5rem 0;
     font-size: 1rem;
+    text-align: center;
 }
 
 /* Responsive Design */

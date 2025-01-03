@@ -73,55 +73,6 @@ h1, h2, h3 {
     left: 2rem;
 }
 
-.clock {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: white;
-    background: none;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.download-buttons {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 1rem;
-}
-
-/* Common style for all download buttons */
-.download-buttons button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: #d3d3d3; /* Circle background */
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-/* Debugging Style: Add red border around image */
-.download-buttons img {
-    width: 24px; /* Adjust size of the logo */
-    height: 24px;
-    object-fit: contain;
-    border: 2px; /* Debugging border */
-}
-
-/* Hover effect for buttons */
-.download-buttons button:hover {
-    background-color: #295a3c;
-}
-
 @keyframes fadeIn {
     from {
         opacity : 0;
@@ -324,15 +275,6 @@ footer p {
 
     .logo img {
         width: 80px;
-    }
-
-    .clock {
-        font-size: 0.9rem;
-    }
-
-    .download-btn {
-        font-size: 0.9em;
-        padding: 6px 12px;
     }
 
     h2 {
